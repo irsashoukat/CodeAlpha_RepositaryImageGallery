@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Responsive Image Gallery</h1>
+    <nav class="filter-bar">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="nature">Nature</button>
+      <button data-filter="city">City</button>
+      <button data-filter="people">People</button>
+      <button data-filter="animals">Animals</button>
+    </nav>
+  </header>
+
+ <main class="Gallery">
+    <div class="grid">
+      <figure class="card" data-category="nature">
+         <img src="https://picsum.photos/id/1018/400/300" alt="Nature 1" class="thumb">
+         <figcaption>Nature</figcaption>
+      </figure>
+      <figure class="card" data-category="city">
+        <img src="https://picsum.photos/id/1015/400/300" alt="City 1" class="thumb">
+        <figcaption>City</figcaption>
+      </figure>
+      <figure class="card" data-category="People">
+        <img src="https://picsum.photos/id/1005/400/300" alt="Prople 1" class="thumb">
+        <figcaption>people</figcaption>
+      </figure>
+      <figure class="card" data-category="animals">
+        <img src="https://picsum.photos/id/1024/400/300" alt="Animals 1" class="thumb">
+        <figcaption>Animals</figcaption>
+      </figure>
+      <figure class="card" data-category="nature"> 
+         <img src="https://picsum.photos/id/106/400/300" alt="nature 2" class="thumb">
+         <figcaption>Nature</figcaption>
+      </figure>
+      <figure class="card" data-category="city">
+        <img src="https://picsum.photos/id/1031/400/300" alt="City 2" class="thumb">
+        <figcaption>City</figcaption>
+      </figure>
+      <figure class="card" data-category="People">
+        <img src="https://picsum.photos/id/1027/400/300" alt="Prople 2" class="thumb">
+        <figcaption>people</figcaption>
+      </figure>
+      <figure class="card" data-category="animals">
+        <img src="https://picsum.photos/id/433/400/300" alt="Animals 2" class="thumb">
+        <figcaption>Animals</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox hidden">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="" alt="Expanded view">
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
